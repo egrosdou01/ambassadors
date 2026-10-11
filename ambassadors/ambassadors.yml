@@ -196,6 +196,36 @@ ambassadors:
       website: null
       credly: https://www.credly.com/users/sagar-utekar
       sessionize: https://sessionize.com/sagar-utekar/
+  - name: Shubham Katara
+    github_username: skatara
+    github_user_id: 13725551
+    image_url: null
+    status: active
+    joined_at: 2026-01-01
+    role: Platform Engineer at trivago N.V
+    location: Dusseldorf, Germany
+    timezone: Europe/Berlin
+    pronouns: he/him
+    bio: Shubham Katara is a Platform Engineer at trivago N.V, specializing in building Hybrid K8s Platforms and AI/ML Infrastructure, and scaling resilient platforms that bridge the gap between on-premise datacenters and the public cloud. Passionate about teaching through various blogs and videos via freecodecamp.
+    interests:
+      - Google Cloud Platform
+      - Platform engineering
+      - Kubernetes
+      - Developer experience
+      - Open Source
+      - Content Creation
+      - Public Speaking
+    languages:
+      - English
+      - Hindi
+    socials:
+      github: https://github.com/shkatara
+      linkedin: https://www.linkedin.com/in/shubhamkatara/
+      x: null
+      bluesky: null
+      website: null
+      credly: https://www.credly.com/users/shubham-katara
+      sessionize: null
   - name: Artem Lajko
     github_username: la-cc
     github_user_id: 110809333 #TODO
