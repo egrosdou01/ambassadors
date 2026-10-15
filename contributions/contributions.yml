@@ -108,3 +108,18 @@ contributions:
       reviewer: hrittikhere
       rationale: Published a vCluster blog post introducing and exploring GitOps Stack
       approved_at: 2026-09-01T07:38:42Z
+  - id: vc-2026-0031
+    source_issue: 31
+    ambassador:
+      github_username: pmady
+      github_user_id: 15876315
+    activity:
+      type: tutorial
+      title: "One Model, Many Tenants: Running Dragonfly as a Shared P2P Model Cache Under vCluster"
+      date: 2026-09-26
+      evidence_url: https://github.com/pmady/vcluster-dragonfly-shared-cache
+    scoring:
+      points: 20
+      reviewer: hrittikhere
+      rationale: Published a reproducible Dragonfly and vCluster tutorial with pinned configuration, manifests, checksums, transfer evidence, limitations, and cleanup.
+      approved_at: 2026-10-15T02:28:18Z
