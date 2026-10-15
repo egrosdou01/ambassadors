@@ -55,7 +55,7 @@ Human review and maintainer approval
       ↓
 Automatic contribution pull request
       ↓
-Merge into the central YAML record
+Automatic merge into the central YAML record and issue closure
       ↓
 GitHub Pages dashboard rebuild
 ```
@@ -148,6 +148,10 @@ An authorized reviewer approves a validated issue with:
 ```
 
 The workflow verifies the reviewer, identity, contribution type, approved value, note, source issue, evidence, and date before it can open a contribution record pull request. The contribution type always comes from the original issue submission, and the prepared record is validated in the same workflow run, because pull requests opened by automation do not start a separate check.
+
+After validation, tests, and the dashboard build pass, the workflow opens the record PR and automatically squash-merges its exact prepared commit. It then queues the dashboard deployment, marks the submission `status:credited`, and closes the issue. No second human approval or manual merge is needed. The workflow explicitly dispatches deployment and finalizes the issue because merges made with `GITHUB_TOKEN` do not trigger the normal push and PR-closed workflows.
+
+The repository must allow GitHub Actions to create pull requests and squash-merge into `main`. Branch rules must permit this automation to merge without another review or checks that cannot run on token-created PRs. Merge conflicts, policy blocks, or deployment failures are reported on the submission with a link to the failed workflow run.
 
 Approved records are stored in [contributions/contributions.yml](contributions/contributions.yml), then GitHub Actions rebuilds the dashboard for GitHub Pages. Point values and ranges in [config/activity-types.yml](config/activity-types.yml) are reviewer references, not enforced limits; the authorized maintainer's `/approve` command determines the recorded score. The program has no monthly or quarterly point baseline.
 
