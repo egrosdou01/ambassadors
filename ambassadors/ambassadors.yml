@@ -262,7 +262,7 @@ ambassadors:
       sessionize: https://sessionize.com/artem-lajko/
   - name: Walid Dridi
     github_username: dridi-walid
-    github_user_id: null # Managed by automation
+    github_user_id: 42480883 # Managed by automation
     image_url: null
     status: active
     joined_at: 2026-10-14
